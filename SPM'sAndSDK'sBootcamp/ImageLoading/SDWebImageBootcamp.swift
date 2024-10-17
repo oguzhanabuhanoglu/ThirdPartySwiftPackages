@@ -17,15 +17,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct ImageLoader: View {
-    
-    let url: String
-    var contentMode: ContentMode = .fill
-    
-    var body: some View {
-        SDWebImageLoader(url: url, contentMode: contentMode)
-    }
-}
+
 
 struct SDWebImageLoader: View {
     
