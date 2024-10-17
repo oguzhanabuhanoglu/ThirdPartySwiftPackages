@@ -9,8 +9,8 @@
  If you know the user is going to get to some screen in the future rather than loading the image when it comes on to the screen first time you can use this logic to preload some of that data.
  */
 import Foundation
-import SDWebImageSwiftUI
 
+import SDWebImageSwiftUI
 class ImagePrefetcher {
     
     static let instance = ImagePrefetcher()
@@ -24,5 +24,23 @@ class ImagePrefetcher {
     
     func stoppedPrefetching() {
         prefetcher.cancelPrefetching()
+    }
+}
+
+import Kingfisher
+class ImagePrefetcher2 {
+    
+    static let instance = ImagePrefetcher2()
+    var prefetcher: Kingfisher.ImagePrefetcher? = nil
+    
+    private init() {}
+    
+    func startPrefetching(urls: [URL]) {
+        prefetcher = Kingfisher.ImagePrefetcher(urls: urls)
+        prefetcher?.start()
+    }
+    
+    func stopPrefetching() {
+        prefetcher?.stop()
     }
 }

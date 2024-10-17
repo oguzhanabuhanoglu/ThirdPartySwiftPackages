@@ -17,12 +17,10 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-
-
 struct SDWebImageLoader: View {
     
     let url: String
-    var contentMode: ContentMode = .fill
+    let contentMode: ContentMode = .fill
     
     var body: some View {
         WebImage(url: URL(string: url))
@@ -40,8 +38,11 @@ struct SDWebImageLoader: View {
 
 struct SDWebImageBootcamp: View {
     var body: some View {
-        ImageLoader(url: "https://picsum.photos/id/237/200/300" , contentMode: .fill)
+        ImageLoader(url: "https://picsum.photos/id/237/200/300", contentMode: .fill)
             .frame(width: 200, height: 200)
+            .onAppear {
+//                ImagePrefetcher.instance.startPrefetching(urls: <#T##[URL]#>)
+            }
     }
 }
 

@@ -12,11 +12,12 @@ struct ImageLoader: View {
     var contentMode: ContentMode = .fill
     
     var body: some View {
-        SDWebImageLoader(url: url, contentMode: contentMode)
+//        SDWebImageLoader(url: url)
+        KingFisherImageLoader(url: url)
     }
 }
 
 #Preview {
     ImageLoader(url: "https://picsum.photos/id/237/200/300" , contentMode: .fill)
-        .frame(width: 200, height: 200)
+        
 }
