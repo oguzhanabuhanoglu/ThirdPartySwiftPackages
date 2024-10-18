@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF391A602CC29B8700F74DC3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF391A5F2CC29B8700F74DC3 /* KeychainSwift */; };
+		BF391A7A2CC2AF9000F74DC3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BF391A792CC2AF9000F74DC3 /* Lottie */; };
 		BF74D6B32CC14EE7008CAA01 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BF74D6B22CC14EE7008CAA01 /* SDWebImageSwiftUI */; };
 		BF74D6C42CC15815008CAA01 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BF74D6C32CC15815008CAA01 /* Kingfisher */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 				BF391A602CC29B8700F74DC3 /* KeychainSwift in Frameworks */,
 				BF74D6C42CC15815008CAA01 /* Kingfisher in Frameworks */,
 				BF74D6B32CC14EE7008CAA01 /* SDWebImageSwiftUI in Frameworks */,
+				BF391A7A2CC2AF9000F74DC3 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +79,7 @@
 				BF74D6B22CC14EE7008CAA01 /* SDWebImageSwiftUI */,
 				BF74D6C32CC15815008CAA01 /* Kingfisher */,
 				BF391A5F2CC29B8700F74DC3 /* KeychainSwift */,
+				BF391A792CC2AF9000F74DC3 /* Lottie */,
 			);
 			productName = "SPM'sAndSDK'sBootcamp";
 			productReference = BF74D69E2CC13688008CAA01 /* SPM'sAndSDK'sBootcamp.app */;
@@ -110,6 +113,7 @@
 				BF74D6B12CC14EE7008CAA01 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				BF74D6C22CC15815008CAA01 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				BF391A5E2CC29B8700F74DC3 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				BF391A782CC2AF9000F74DC3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BF74D69F2CC13688008CAA01 /* Products */;
@@ -351,6 +355,14 @@
 				minimumVersion = 24.0.0;
 			};
 		};
+		BF391A782CC2AF9000F74DC3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
 		BF74D6B12CC14EE7008CAA01 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -374,6 +386,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BF391A5E2CC29B8700F74DC3 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		BF391A792CC2AF9000F74DC3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF391A782CC2AF9000F74DC3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 		BF74D6B22CC14EE7008CAA01 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
